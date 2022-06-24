@@ -1,0 +1,30 @@
+{
+  "schemaVersion": 1,
+  "id": "nnhack",
+  "version": "${version}",
+  "name": "Nnhack",
+  "description": "minecraft hacked client",
+  "authors": [
+    "nn7718"
+  ],
+  "contact": {},
+  "license": "MIT",
+  "icon": "assets/nnhack/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "client": [
+      "inc.ananas.sychnico.nnhack.client.NnhackClient"
+    ],
+    "main": [
+      "inc.ananas.sychnico.nnhack.Nnhack"
+    ]
+  },
+  "mixins": [
+    "nnhack.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.14.8",
+    "fabric": "*",
+    "minecraft": "1.19"
+  }
+}
